@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function SignIn() {
+export default function SignUp() {
   return (
     <div className="form-control w-full flex justify-center xs:px-8 pb-4">
       <label className="label" htmlFor="name">

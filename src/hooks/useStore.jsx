@@ -19,3 +19,7 @@ export const useReadingPageStore = create((set) => ({
   setTheme: (theme) => set(() => ({ backgroundColor: theme.backgroundColor, textColor: theme.textColor })),
 }))
 
+export const useLoginStore = create((set) => ({
+  token: '',
+  isLogin: false,
+}))

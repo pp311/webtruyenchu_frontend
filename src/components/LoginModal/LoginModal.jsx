@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Login from "./Login"
-import SignIn from "./SignIn"
+import SignUp from "./SignUp"
 
 export default function LoginModal() {
   const [currentTab, setCurrentTab] = useState(0)
@@ -12,11 +12,11 @@ export default function LoginModal() {
           <label htmlFor="login-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
           <div className="mt-0">
             <div className="tabs flex justify-center">
-              <a className={`tab ${currentTab == 0 ? "tab-active text-primary " : ""} text-xl`} onClick={() => setCurrentTab(0)}>Dang nhap</a>
-              <a className={`tab ${currentTab == 1 ? "tab-active text-primary" : ""} text-xl`} onClick={() => setCurrentTab(1)}>Dang ky</a>
+              <a className={`tab ${currentTab == 0 ? "tab-active text-primary " : ""} text-xl`} onClick={() => setCurrentTab(0)}>Đăng nhập</a>
+              <a className={`tab ${currentTab == 1 ? "tab-active text-primary" : ""} text-xl`} onClick={() => setCurrentTab(1)}>Đăng ký</a>
             </div>
             <Login />
-            {/* <SignIn /> */}
+            {/* <SignUp /> */}
           </div>
         </label>
       </label>

@@ -2,8 +2,8 @@ import { getConfiguration } from './config';
 
 const BASE_API_DIR = getConfiguration().apiUrl;
 
-export const getData = (url) => {
-  let resData = fetch(`${BASE_API_DIR}/${url}`)
+export const getData = (url, options = {}) => {
+  let resData = fetch(`${BASE_API_DIR}/${url}`, options)
     .then(res => res.json())
     .then((result) => {
       return result
